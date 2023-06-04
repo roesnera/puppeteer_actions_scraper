@@ -29,9 +29,11 @@ const getTikTokMetrics = async () => {
     
     // console.log(tikTokMetrics);
 
+    const tikTokFollowers = (Math.round(tikTokMetrics[1] / 100) / 10) + "k";
+
     const metrics = {
         tikTokLikes: tikTokMetrics[2],
-        tikTokFollowers: tikTokMetrics[1],
+        tikTokFollowers,
         instagramFollowers: "1.8k"
     }
 
